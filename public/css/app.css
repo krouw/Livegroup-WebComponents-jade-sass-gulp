@@ -2265,20 +2265,27 @@ header {
     header .Header-Nav .Nav-Item.is-active {
       border-bottom: 2px solid #558b2f; }
 
-.content {
+.background {
   background-color: #8bc34a;
   height: 100vh; }
 
-.Login-Logo {
-  z-index: 11;
-  right: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto; }
-
-.Login-Card {
-  width: 18.750em; }
-  .Login-Card .Login-Button a {
+.Login .Login-Card {
+  width: 18.750em;
+  margin-top: 10em; }
+  .Login .Login-Card .Login-Button a {
     text-transform: capitalize;
     width: 90%;
     height: 3em; }
+  .Login .Login-Card form {
+    margin: 5em 0 1em 0; }
+    .Login .Login-Card form label {
+      width: initial;
+      color: black; }
+    .Login .Login-Card form .input-field {
+      width: 80%; }
+
+.Login .Login-Logo {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  left: 0; }
