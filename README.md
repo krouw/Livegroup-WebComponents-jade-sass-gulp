@@ -7,6 +7,10 @@ jade
 sass
 gulp
 
+materialize
+jquery
+flexboxgrid
+
 En el directorio de la carpeta ejecutar
 1) npm install
 2) gulp
