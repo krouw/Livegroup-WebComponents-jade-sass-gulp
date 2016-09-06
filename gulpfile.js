@@ -8,6 +8,7 @@ const sass = require('gulp-sass');
 const postcss = require("gulp-postcss");
 const autoprefixer = require('autoprefixer');
 const uglify = require('gulp-uglify');
+const jadepage = "./lib/index.jade";
 
 //Vector de tareas a realizar
 gulp.task('default',['flexbox','material','jade','sass','js','watch'],()=>{
@@ -98,7 +99,7 @@ gulp.task('material-sass',()=>{
 
 gulp.task('jade',()=>{
   /* pretty true modo develop */
-  return gulp.src('./lib/grupo.jade')
+  return gulp.src(jadepage)
           .pipe(jade({pretty:true}))
           .pipe(gulp.dest('./public/'));
 });
