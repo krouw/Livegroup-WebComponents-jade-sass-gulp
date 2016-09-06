@@ -10,7 +10,7 @@ const autoprefixer = require('autoprefixer');
 const uglify = require('gulp-uglify');
 
 //Vector de tareas a realizar
-gulp.task('default',['flexbox','jquery','material','jade','sass','js','watch'],()=>{
+gulp.task('default',['flexbox','material','jade','sass','js','watch'],()=>{
 
     //servidor
     //para que funcione debe existir etiqueta body
@@ -46,11 +46,6 @@ gulp.task('watch',()=>{
   gulp.watch("./public/**/*.html").on('change',reload);
   gulp.watch("./public/**/*.css").on('change',reload);
   gulp.watch("./public/**/*.js").on('change',reload);
-});
-
-gulp.task('jquery',() =>{
-  return gulp.src("./bower_components/jquery/dist/jquery.js")
-          .pipe(glup.dest("./public/js"));
 });
 
 gulp.task('flexbox',()=>{
