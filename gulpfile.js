@@ -10,7 +10,7 @@ const autoprefixer = require('autoprefixer');
 const uglify = require('gulp-uglify');
 
 //Vector de tareas a realizar
-gulp.task('default',['material','jade','sass','js','watch'],function(){
+gulp.task('default',['flexbox','jquery','material','jade','sass','js','watch'],()=>{
 
     //servidor
     //para que funcione debe existir etiqueta body
@@ -21,7 +21,7 @@ gulp.task('default',['material','jade','sass','js','watch'],function(){
      });
 });
 
-gulp.task('stylesheet',function(){
+gulp.task('stylesheet',()=>{
   browserSync.init({
       server: {
          baseDir: './',
@@ -37,8 +37,9 @@ gulp.task('stylesheet',function(){
 //On change recarga servidor
 //./public/*.jade -> Los archivos dentro del public
 //./public/**/*.jade -> Todos los archivos jade que exitan dentro de carpeta recursivo
-gulp.task('watch',function(){
-  gulp.watch("./bower_components/materialize/sass/materialize.scss",['material']);
+gulp.task('watch',()=>{
+  gulp.watch("./bower_components/materialize/sass/**/*.scss",['material']);
+  gulp.watch("./bower_components/materialize/js/**/*.scss",['material']);
   gulp.watch("./lib/**/*.jade",['jade']);
   gulp.watch("./lib/**/*.sass",['sass']);
   gulp.watch("./lib/**/*.js",['js']);
@@ -47,9 +48,19 @@ gulp.task('watch',function(){
   gulp.watch("./public/**/*.js").on('change',reload);
 });
 
+gulp.task('jquery',() =>{
+  return gulp.src("./bower_components/jquery/dist/jquery.js")
+          .pipe(glup.dest("./public/js"));
+});
+
+gulp.task('flexbox',()=>{
+  return gulp.src("./bower_components/flexboxgrid/dist/flexboxgrid.css")
+          .pipe(gulp.dest("./public/css"));
+});
+
 gulp.task('material',['material-sass','material-js']);
 
-gulp.task('material-js',function(){
+gulp.task('material-js',()=>{
   return gulp.src(["./bower_components/materialize/js/initial.js",
           "./bower_components/materialize/js/jquery.easing.1.3.js",
           "./bower_components/materialize/js/animation.js",
@@ -84,20 +95,20 @@ gulp.task('material-js',function(){
           .pipe(gulp.dest('./public/js/'));
 });
 
-gulp.task('material-sass',function(){
+gulp.task('material-sass',()=>{
   return gulp.src('./bower_components/materialize/sass/materialize.scss')
           .pipe(sass.sync().on('error',sass.logError))
           .pipe(gulp.dest('./public/css'));
 });
 
-gulp.task('jade',function(){
+gulp.task('jade',()=>{
   /* pretty true modo develop */
   return gulp.src('./lib/grupo.jade')
           .pipe(jade({pretty:true}))
           .pipe(gulp.dest('./public/'));
 });
 
-gulp.task('sass',function(){
+gulp.task('sass',()=>{
   /* AUTOPREFIXER: Compila archivo y agrega prefijos navegadores */
   /* PRODUCCIÓN: pipe(sass.sync({outputStyle: 'compressed'}).on('error',sass.logError)) */
    var processors = [
@@ -109,7 +120,7 @@ gulp.task('sass',function(){
     .pipe(gulp.dest('./public/css'));
 });
 
-gulp.task('js',function(){
+gulp.task('js',()=>{
   /* .pipe(uglify()) -> produccion*/
   gulp.src(['./lib/util/**/*.js','./lib/Components/**/*.js','./lib/app.js'])
     .pipe(concat('app.js'))
