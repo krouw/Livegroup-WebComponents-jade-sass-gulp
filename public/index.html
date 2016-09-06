@@ -9,25 +9,26 @@
 </head>
 <body>
   <section class="Layout">
-    <header>
-      <div class="Header-Info row between-xs">
-        <div class="Header-User col-xs-3"> 
-          <div class="User row">
-            <div class="col-xs-3"><img src="images/50x50.png" class="circle"></div>
-            <div class="col-xs">
-              <p>Felipe Rubio</p>
-              <p>Jumbo La Florida</p>
+    <section class="content">
+      <div class="Login row center-xs">
+        <div class="Login-Logo col-xs-12"><img src="images/login.jpeg" class="circle responsive-img"></div>
+        <div class="Login-Card col-lg-6 card-panel grey lighten-4">
+          <form action="" method="post" class="row">
+            <div class="Login-Email col-xs-12">
+              <input type="email">
             </div>
-          </div>
-        </div>
-        <div class="Header-Logo col-xs-3">
-          <div class="Logo row end-xs"><img src="images/150x50.png"></div>
+            <div class="Login-Pass col-xs-12">
+              <input type="password">
+            </div>
+            <div class="Login-Remember col-xs-6">
+              <input type="checkbox">
+            </div>
+            <div class="Login-Forgot col-xs-6"><a href="#" class="btn-flat"></a></div>
+            <div class="Login-Button col-xs-12"><a class="btn">Ingresar</a></div>
+          </form>
         </div>
       </div>
-      <div class="Header-Nav">
-        <div class="Nav-Items row around-xs"><a href="index.html" class="Nav-Item is-active">Anuncios</a><a class="Nav-Item">Turnos</a><a href="grupo.html" class="Nav-Item">Grupo</a><a class="Nav-Item">Admin</a></div>
-      </div>
-    </header>
+    </section>
   </section>
   <script src="js/jquery.min.js"></script>
   <script src="js/materialize.js"></script>

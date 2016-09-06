@@ -2264,3 +2264,21 @@ header {
       cursor: pointer; }
     header .Header-Nav .Nav-Item.is-active {
       border-bottom: 2px solid #558b2f; }
+
+.content {
+  background-color: #8bc34a;
+  height: 100vh; }
+
+.Login-Logo {
+  z-index: 11;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+.Login-Card {
+  width: 18.750em; }
+  .Login-Card .Login-Button a {
+    text-transform: capitalize;
+    width: 90%;
+    height: 3em; }
