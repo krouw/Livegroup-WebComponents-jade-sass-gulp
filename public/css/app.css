@@ -2326,22 +2326,35 @@ header {
   background-color: #8bc34a;
   height: 100vh; }
 
-.Login .Login-Card {
-  width: 18.750em;
+.Login-Card {
   margin-top: 10em; }
-  .Login .Login-Card .Login-Button a {
+  .Login-Card form {
+    margin-top: 2.5em; }
+  .Login-Card .input-field label {
+    width: initial !important;
+    left: 4%; }
+  .Login-Card .input-field i {
+    margin-top: .4em; }
+  .Login-Card .input-field input[type=email]:focus + label,
+  .Login-Card .input-field input[type=password]:focus + label,
+  .Login-Card .input-field input[type=text]:focus + label {
+    color: #558B2F; }
+  .Login-Card .Login-Remember {
+    margin-top: .4em !important; }
+  .Login-Card .Login-Forgot a {
+    font-size: 1em;
+    float: right;
+    padding: 0;
     text-transform: capitalize;
-    width: 90%;
-    height: 3em; }
-  .Login .Login-Card form {
-    margin: 5em 0 1em 0; }
-    .Login .Login-Card form label {
-      width: initial;
-      color: black; }
-    .Login .Login-Card form .input-field {
-      width: 80%; }
+    text-decoration: underline;
+    color: #558B2F; }
+  .Login-Card .Login-Button {
+    margin-top: 2em; }
+    .Login-Card .Login-Button a {
+      padding: 0 5em;
+      background-color: #558B2F; }
 
-.Login .Login-Logo {
+.Login-Logo {
   position: absolute;
   top: 10%;
   right: 0;

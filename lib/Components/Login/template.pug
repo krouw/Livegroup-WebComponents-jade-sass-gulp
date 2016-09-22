@@ -1,17 +1,22 @@
 section.background
-  .Login.row.center-xs.middle-xs
-    .Login-Card.col-lg-6.card-panel.grey.lighten-4
-      .Login-Logo
-        img.circle.responsive-img(src="images/login.jpeg")
-      form.row.center-xs(action="", method="post")
-        .col-xs-11.input-field
-          input.validate(type='email')
-          label(for='Singup-Email') Nombre
-        .Login-Pass.col-xs-12
-          input(type="password")
-        .Login-Remember.col-xs-6
-          input(type="checkbox")
-        .Login-Forgot.col-xs-6
-          a.btn-flat(href="#")
-        .Login-Button.col-xs-12
-          a.btn Ingresar      
+  .row.center-xs.middle-xs
+    .col-xs-4
+      .Login-Card.card-panel.grey.lighten-4
+        .Login-Logo
+          img.circle.responsive-img(src="images/login.jpeg")
+        form.row.center-xs
+          .col-xs-12.input-field
+            i(class="material-icons prefix") mail
+            input#Signup-Email.validate(type="email")
+            label(for="Signup-Email") Email
+          .col-xs-12.input-field
+            i(class="material-icons prefix") lock
+            input#Signup-Password.validate(type="password")
+            label(for="Signup-Password") Password
+          .Login-Remember.col-lg-4.input-field
+            input#Login-Rememberme(type="checkbox")
+            label(for='Login-Rememberme') Recuerdame
+          .Login-Forgot.col-lg-8.input-field
+            a.btn-flat(href="#") Olvidó su password?
+          .Login-Button.col-lg-12.input-field
+            a.btn.btn-large Ingresar

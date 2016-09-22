@@ -10,40 +10,31 @@
 </head>
 <body>
   <section class="Layout">
-    <header class="row between-lg">
-      <div class="Header col-lg-12">
-        <div class="box">
-          <div class="row between-lg middle-lg">
-            <div class="User col-lg-4">
-              <div class="box">
-                <div class="row">
-                  <div class="User-image col-lg-2"><img class="circle" src="images/65x65.jpeg"></div>
-                  <div class="col-lg"><a class="User-name dropdown-button" data-activates="User-dropdown">Felipe Rubio<i class="material-icons User-Icon">arrow_drop_down</i></a>
-                    <ul class="dropdown-content" id="User-dropdown">
-                      <li><a>Editar Perfil</a></li>
-                      <li><a>Cerrar Sesión</a></li>
-                    </ul>
-                    <p class="User-empresa">Jumbo La Florida</p>
-                  </div>
-                </div>
+    <section class="background">
+      <div class="row center-xs middle-xs">
+        <div class="col-xs-4">
+          <div class="Login-Card card-panel grey lighten-4">
+            <div class="Login-Logo"><img class="circle responsive-img" src="images/login.jpeg"></div>
+            <form class="row center-xs">
+              <div class="col-xs-12 input-field"><i class="material-icons prefix">mail</i>
+                <input class="validate" id="Signup-Email" type="email">
+                <label for="Signup-Email">Email</label>
               </div>
-            </div>
-            <div class="Logo col-lg-4"><img src="images/250x70.jpeg"></div>
+              <div class="col-xs-12 input-field"><i class="material-icons prefix">lock</i>
+                <input class="validate" id="Signup-Password" type="password">
+                <label for="Signup-Password">Password</label>
+              </div>
+              <div class="Login-Remember col-lg-4 input-field">
+                <input id="Login-Rememberme" type="checkbox">
+                <label for="Login-Rememberme">Recuerdame</label>
+              </div>
+              <div class="Login-Forgot col-lg-8 input-field"><a class="btn-flat" href="#">Olvidó su password?</a></div>
+              <div class="Login-Button col-lg-12 input-field"><a class="btn btn-large">Ingresar</a></div>
+            </form>
           </div>
         </div>
       </div>
-      <div class="Nav col-lg-12">
-        <div class="box">
-          <div class="Nav-Items row around-lg middle-lg">
-            <div class="col-lg"><a class="Nav-Item is-active" href="index.html">Anuncios</a></div>
-            <div class="col-lg"><a class="Nav-Item">Turnos</a></div>
-            <div class="col-lg"><a class="Nav-Item" href="grupo.html">Grupo</a></div>
-            <div class="col-lg"><a class="Nav-Item">Empleados</a></div>
-            <div class="col-lg"><a class="Nav-Item">Admin</a></div>
-          </div>
-        </div>
-      </div>
-    </header>
+    </section>
   </section>
   <script src="js/jquery.min.js"></script>
   <script src="js/materialize.js"></script>

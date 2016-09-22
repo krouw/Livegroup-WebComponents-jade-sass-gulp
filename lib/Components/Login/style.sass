@@ -1,24 +1,38 @@
 .background
   background-color: $verdeclaro
   height: 100vh
-.Login
-  .Login-Card
-    width: 18.750em
-    margin-top: 10em
-    .Login-Button
-      a
-        text-transform: capitalize
-        width: 90%
-        height: 3em
-    form
-      margin: 5em 0 1em 0
-      label
-        width: initial
-        color: black
-      .input-field
-        width: 80%
-  .Login-Logo
-    position: absolute
-    top: 10%
-    right: 0
-    left: 0
+
+.Login-Card
+  margin-top: 10em
+  form
+    margin-top: 2.5em
+  .input-field
+    label
+      width: initial !important
+      left: 4%
+    i
+      margin-top: .4em
+    input[type=email]:focus + label,
+    input[type=password]:focus + label,
+    input[type=text]:focus + label
+      color: $verdeoscuro
+  .Login-Remember
+    margin-top: .4em !important
+  .Login-Forgot
+    a
+      font-size: 1em
+      float: right
+      padding: 0
+      text-transform: capitalize
+      text-decoration: underline
+      color: $verdeoscuro
+  .Login-Button
+    margin-top: 2em
+    a
+      padding: 0 5em
+      background-color: $verdeoscuro
+.Login-Logo
+  position: absolute
+  top: 10%
+  right: 0
+  left: 0
