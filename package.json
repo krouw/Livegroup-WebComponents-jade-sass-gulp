@@ -13,7 +13,8 @@
   "author": "krouw",
   "license": "ISC",
   "dependencies": {
-    "browser-sync": "^2.13.0"
+    "browser-sync": "^2.13.0",
+    "gulp-pug": "^3.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",

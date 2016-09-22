@@ -3,15 +3,15 @@ const babelify = require('babelify');
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 const concat = require('gulp-concat');
-const jade = require("gulp-jade");
+const pug = require("gulp-pug");
 const sass = require('gulp-sass');
 const postcss = require("gulp-postcss");
 const autoprefixer = require('autoprefixer');
 const uglify = require('gulp-uglify');
-const jadepage = "./lib/index.jade";
+const pugpage = "./lib/index.pug";
 
 //Vector de tareas a realizar
-gulp.task('default',['flexbox','material','jade','sass','js','watch'],()=>{
+gulp.task('default',['flexbox','material','pug','sass','js','watch'],()=>{
 
     //servidor
     //para que funcione debe existir etiqueta body
@@ -36,12 +36,12 @@ gulp.task('stylesheet',()=>{
 
 //Escucha la ruta y ejecuta las task si hay cambios
 //On change recarga servidor
-//./public/*.jade -> Los archivos dentro del public
-//./public/**/*.jade -> Todos los archivos jade que exitan dentro de carpeta recursivo
+//./public/*.pug -> Los archivos dentro del public
+//./public/**/*.pug -> Todos los archivos pug que exitan dentro de carpeta recursivo
 gulp.task('watch',()=>{
   gulp.watch("./bower_components/materialize/sass/**/*.scss",['material']);
   gulp.watch("./bower_components/materialize/js/**/*.scss",['material']);
-  gulp.watch("./lib/**/*.jade",['jade']);
+  gulp.watch("./lib/**/*.pug",['pug']);
   gulp.watch("./lib/**/*.sass",['sass']);
   gulp.watch("./lib/**/*.js",['js']);
   gulp.watch("./public/**/*.html").on('change',reload);
@@ -97,10 +97,10 @@ gulp.task('material-sass',()=>{
           .pipe(gulp.dest('./public/css'));
 });
 
-gulp.task('jade',()=>{
+gulp.task('pug',()=>{
   /* pretty true modo develop */
-  return gulp.src(jadepage)
-          .pipe(jade({pretty:true}))
+  return gulp.src(pugpage)
+          .pipe(pug({pretty:true}))
           .pipe(gulp.dest('./public/'));
 });
 

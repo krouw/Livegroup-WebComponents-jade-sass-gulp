@@ -6,30 +6,38 @@
   <link rel="stylesheet" href="./css/flexboxgrid.min.css">
   <link rel="stylesheet" href="./css/materialize.css">
   <link rel="stylesheet" href="./css/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 </head>
 <body>
   <section class="Layout">
-    <section class="background">
-      <div class="Login row center-xs middle-xs">
-        <div class="Login-Card col-lg-6 card-panel grey lighten-4">
-          <div class="Login-Logo"><img src="images/login.jpeg" class="circle responsive-img"></div>
-          <form action="" method="post" class="row center-xs">
-            <div class="col-xs-11 input-field">
-              <input type="email" class="validate">
-              <label for="Singup-Email">Nombre</label>
+    <header>
+      <div class="Header-Info row between-xs">
+        <div class="Header-User col-xs-3">
+          <div class="User row">
+            <div class="col-lg-3"><img class="circle" src="images/50x50.png"></div>
+            <div class="col-lg"><a class="User-name dropdown-button" data-activates="User-dropdown">Felipe Rubio<i class="material-icons User-Icon">arrow_drop_down</i></a>
+              <p>Jumbo La Florida</p>
+              <ul class="dropdown-content" id="User-dropdown">
+                <li><a>Editar Perfil</a></li>
+                <li><a>Cerrar Sesión</a></li>
+              </ul>
             </div>
-            <div class="Login-Pass col-xs-12">
-              <input type="password">
-            </div>
-            <div class="Login-Remember col-xs-6">
-              <input type="checkbox">
-            </div>
-            <div class="Login-Forgot col-xs-6"><a href="#" class="btn-flat"></a></div>
-            <div class="Login-Button col-xs-12"><a class="btn">Ingresar      </a></div>
-          </form>
+          </div>
+        </div>
+        <div class="Header-Logo col-lg-3">
+          <div class="Logo row end-lg"><img src="images/150x50.png"></div>
         </div>
       </div>
-    </section>
+      <div class="Header-Nav">
+        <div class="Nav-Items row star-lg">
+          <div class="col-lg-2"><a class="Nav-Item is-active" href="index.html">Anuncios</a></div>
+          <div class="col-lg-2"><a class="Nav-Item">Turnos</a></div>
+          <div class="col-lg-2"><a class="Nav-Item" href="grupo.html">Grupo</a></div>
+          <div class="col-lg-2"><a class="Nav-Item">Empleados</a></div>
+          <div class="col-lg-2"><a class="Nav-Item">Admin</a></div>
+        </div>
+      </div>
+    </header>
   </section>
   <script src="js/jquery.min.js"></script>
   <script src="js/materialize.js"></script>
