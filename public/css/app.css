@@ -2305,8 +2305,7 @@ header {
 
 .Nav .Nav-Items {
   width: 60%;
-  margin-left: 1em;
-  margin-top: .7em; }
+  margin-left: 1em; }
   .Nav .Nav-Items div {
     text-align: center; }
 
@@ -2317,10 +2316,12 @@ header {
   padding: .4em 1em; }
 
 .Nav .Nav-Item:hover {
-  border-bottom: 3px solid #558B2F; }
+  border-bottom: 3px solid #558B2F;
+  padding-bottom: .7em; }
 
 .Nav .Nav-Item.is-active {
-  border-bottom: 3px solid #558B2F; }
+  border-bottom: 3px solid #558B2F;
+  padding-bottom: .7em; }
 
 .background {
   background-color: #8bc34a;
