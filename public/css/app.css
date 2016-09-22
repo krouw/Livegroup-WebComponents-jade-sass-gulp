@@ -2265,43 +2265,62 @@ body {
   font-feature-settings: 'liga'; }
 
 header {
-  height: 8em;
-  color: #558b2f;
+  height: 9em;
+  color: #558B2F;
   background-color: #fafafa;
   width: 100%;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   margin: 0; }
 
-.box {
+.Header .box {
   width: 100%;
   height: 100%; }
-
-.Header {
-  border: 1px solid blue;
-  box-sizing: border-box; }
 
 .User {
   padding-top: .4em; }
   .User .User-name {
     font-size: 2em;
-    font-family: 'Varela Round'; }
+    font-family: 'Varela Round';
+    letter-spacing: 0;
+    color: #558B2F;
+    cursor: pointer; }
     .User .User-name i {
       position: relative;
       top: 5%; }
   .User .User-image img {
-    float: right; }
+    float: right;
+    margin-top: .4em; }
   .User .User-empresa {
     margin: 0;
-    font-size: 1.3;
-    line-height: 1.2; }
+    font-size: 1.3em;
+    line-height: 1; }
 
-.Logo img {
-  padding-top: .5em;
-  float: right; }
+.Logo {
+  padding-top: 1em; }
+  .Logo img {
+    float: right; }
 
-.Nav {
-  border: 1px solid red;
-  box-sizing: border-box; }
+.Nav .box {
+  width: 100%; }
+
+.Nav .Nav-Items {
+  width: 60%;
+  margin-left: 1em;
+  margin-top: .7em; }
+  .Nav .Nav-Items div {
+    text-align: center; }
+
+.Nav .Nav-Item {
+  color: #558B2F;
+  cursor: pointer;
+  font-size: 1.3em;
+  padding: .4em 1em; }
+
+.Nav .Nav-Item:hover {
+  border-bottom: 3px solid #558B2F; }
+
+.Nav .Nav-Item.is-active {
+  border-bottom: 3px solid #558B2F; }
 
 .background {
   background-color: #8bc34a;
