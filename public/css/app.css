@@ -2387,7 +2387,9 @@ header {
     min-height: 6rem;
     box-sizing: border-box;
     margin-bottom: .5em;
-    color: #424242; }
+    color: #424242;
+    font-weight: 300;
+    font-family: 'Varela Round'; }
     .AnuncioNuevo-Form .AnuncioNuevo-Text::-webkit-input-placeholder {
       color: #424242; }
     .AnuncioNuevo-Form .AnuncioNuevo-Text:-moz-placeholder {
@@ -2404,4 +2406,33 @@ header {
     background: #8bc34a;
     padding: 0 3rem;
     font-size: 1.2em;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    font-weight: 500;
+    height: 3rem; }
+
+.Anuncio-Image {
+  padding: 0; }
+  .Anuncio-Image img {
+    float: left; }
+
+.Anuncio-Info {
+  padding: 0;
+  font-family: 'Varela Round'; }
+  .Anuncio-Info .col-lg-12 {
+    padding: 0; }
+  .Anuncio-Info .Anuncio-User {
+    color: #8bc34a;
+    font-weight: 500;
+    font-size: 2.2em;
+    margin: 0; }
+  .Anuncio-Info .Anuncio-Time {
+    color: #9e9e9e;
+    font-size: 1.2em;
+    line-height: 27px;
+    font-weight: 300; }
+  .Anuncio-Info .Anuncio-Text {
+    font-size: 1.4em;
+    color: #424242;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin: 0.6rem 0; }
