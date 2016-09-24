@@ -2,6 +2,16 @@
   border: 1px solid $color
   box-sizing: border-box
 
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+
 $breakpointv-mobile: 320px
 $breakpointv-tablet: 768px
 $breakpointh-tablet: 1024px
@@ -21,7 +31,9 @@ body
 
 @import './util/sass/animate.sass'
 @import './Components/fonts/style.sass'
-@import './Components/Header/style.sass'
 
 @import './Components/Anuncios/style.sass'
 @import './Components/Login/style.sass'
+
+@import './Components/Header/style.sass'
+@import './Components/AnuncioNuevo/style.sass'

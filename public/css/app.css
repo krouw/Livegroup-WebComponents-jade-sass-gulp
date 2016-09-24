@@ -2264,6 +2264,51 @@ body {
   /* Support for IE. */
   font-feature-settings: 'liga'; }
 
+.Anuncios {
+  margin-top: 1.5em; }
+  .Anuncios .card {
+    padding: 1em;
+    background-color: #fafafa;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.24), 0px 0px 2px 0px rgba(0, 0, 0, 0.12); }
+
+.background {
+  background-color: #8bc34a;
+  height: 100vh; }
+
+.Login-Card {
+  margin-top: 10em; }
+  .Login-Card form {
+    margin-top: 2.5em; }
+  .Login-Card .input-field label {
+    width: initial !important;
+    left: 4%; }
+  .Login-Card .input-field i {
+    margin-top: .4em; }
+  .Login-Card .input-field input[type=email]:focus + label,
+  .Login-Card .input-field input[type=password]:focus + label,
+  .Login-Card .input-field input[type=text]:focus + label {
+    color: #558B2F; }
+  .Login-Card .Login-Remember {
+    margin-top: .4em !important; }
+  .Login-Card .Login-Forgot a {
+    font-size: 1em;
+    float: right;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: #558B2F; }
+  .Login-Card .Login-Button {
+    margin-top: 2em; }
+    .Login-Card .Login-Button a {
+      padding: 0 5em;
+      background-color: #558B2F; }
+
+.Login-Logo {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  left: 0; }
+
 header {
   height: 9em;
   color: #558B2F;
@@ -2323,40 +2368,40 @@ header {
   border-bottom: 3px solid #558B2F;
   padding-bottom: .7em; }
 
-.background {
-  background-color: #8bc34a;
-  height: 100vh; }
+.AnuncioNuevo-Image {
+  padding: 0; }
+  .AnuncioNuevo-Image img {
+    float: left; }
 
-.Login-Card {
-  margin-top: 10em; }
-  .Login-Card form {
-    margin-top: 2.5em; }
-  .Login-Card .input-field label {
-    width: initial !important;
-    left: 4%; }
-  .Login-Card .input-field i {
-    margin-top: .4em; }
-  .Login-Card .input-field input[type=email]:focus + label,
-  .Login-Card .input-field input[type=password]:focus + label,
-  .Login-Card .input-field input[type=text]:focus + label {
-    color: #558B2F; }
-  .Login-Card .Login-Remember {
-    margin-top: .4em !important; }
-  .Login-Card .Login-Forgot a {
-    font-size: 1em;
+.AnuncioNuevo-Form {
+  padding: 0; }
+  .AnuncioNuevo-Form .col-lg-12 {
+    padding: 0; }
+  .AnuncioNuevo-Form .AnuncioNuevo-Text {
+    border-radius: .6em;
+    border: 2px solid rgba(151, 151, 151, 0.5);
+    background-color: #fff; }
+  .AnuncioNuevo-Form .AnuncioNuevo-Text {
+    padding: 0 1rem;
+    font-size: 2em;
+    min-height: 6rem;
+    box-sizing: border-box;
+    margin-bottom: .5em;
+    color: #424242; }
+    .AnuncioNuevo-Form .AnuncioNuevo-Text::-webkit-input-placeholder {
+      color: #424242; }
+    .AnuncioNuevo-Form .AnuncioNuevo-Text:-moz-placeholder {
+      color: #424242; }
+    .AnuncioNuevo-Form .AnuncioNuevo-Text::-moz-placeholder {
+      color: #424242; }
+    .AnuncioNuevo-Form .AnuncioNuevo-Text:-ms-input-placeholder {
+      color: #424242; }
+  .AnuncioNuevo-Form .AnuncioNuevo-Text:focus {
+    border-bottom: 2px solid #8bc34a;
+    box-shadow: 0 1px 0 0 #8bc34a; }
+  .AnuncioNuevo-Form .AnuncioNuevo-Btn {
     float: right;
-    padding: 0;
-    text-transform: capitalize;
-    text-decoration: underline;
-    color: #558B2F; }
-  .Login-Card .Login-Button {
-    margin-top: 2em; }
-    .Login-Card .Login-Button a {
-      padding: 0 5em;
-      background-color: #558B2F; }
-
-.Login-Logo {
-  position: absolute;
-  top: 10%;
-  right: 0;
-  left: 0; }
+    background: #8bc34a;
+    padding: 0 3rem;
+    font-size: 1.2em;
+    text-transform: capitalize; }
