@@ -1183,7 +1183,7 @@
     order: -1;
   }
 
-  .last-lg {
+  .last-xlg {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
