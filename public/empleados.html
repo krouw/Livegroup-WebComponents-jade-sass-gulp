@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalabel=no,initial-scale=1.0,maximun-scale=1.0,minium-scale=1.0">
+  <link rel="stylesheet" href="./css/flexboxgrid.css">
+  <link rel="stylesheet" href="./css/materialize.css">
+  <link rel="stylesheet" href="./css/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+</head>
+<body>
+  <section class="Layout">
+    <header class="row between-lg">
+      <div class="Header col-lg-12">
+        <div class="box">
+          <div class="row between-lg middle-lg">
+            <div class="User col-lg-4">
+              <div class="box">
+                <div class="row">
+                  <div class="User-image col-lg-2"><img class="circle" src="images/65x65.jpeg"></div>
+                  <div class="col-lg"><a class="User-name dropdown-button" data-activates="User-dropdown">Felipe Rubio<i class="material-icons User-Icon">arrow_drop_down</i></a>
+                    <ul class="dropdown-content" id="User-dropdown">
+                      <li><a>Editar Perfil</a></li>
+                      <li><a>Cerrar Sesión</a></li>
+                    </ul>
+                    <p class="User-empresa">Jumbo La Florida</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Logo col-lg-4"><img src="images/250x70.jpeg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="Nav col-lg-12">
+        <div class="box">
+          <div class="Nav-Items row around-lg middle-lg">
+            <div class="col-lg"><a class="Nav-Item" href="index.html">Anuncios</a></div>
+            <div class="col-lg"><a class="Nav-Item">Turnos</a></div>
+            <div class="col-lg"><a class="Nav-Item">Grupo</a></div>
+            <div class="col-lg"><a class="Nav-Item is-active" href="empleados.html">Empleados</a></div>
+            <div class="col-lg"><a class="Nav-Item">Admin</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="Layout-Content row center-lg">
+      <section class="col-lg-10 col-xlg-8 card">
+        <div class="Empleados">
+          <div class="row"></div>
+        </div>
+      </section>
+    </section>
+  </section>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/app.js"></script>
+</body>

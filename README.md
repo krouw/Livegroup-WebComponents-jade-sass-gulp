@@ -1,15 +1,16 @@
-# Livegroup-WebComponents-jade-sass-gulp
+# Livegroup-WebComponents-pug-sass-gulp
 Desarrollo Front End Proyecto Livegroup
 Ingeniería en Software - 2016
 
 Web Components
-jade
-sass
-gulp
+  pug
+  sass
+  gulp
 
-materialize
-jquery
-flexboxgrid
+Liberías
+  materialize
+  jquery
+  flexboxgrid
 
 En el directorio de la carpeta ejecutar
 1) npm install

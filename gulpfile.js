@@ -8,7 +8,7 @@ const sass = require('gulp-sass');
 const postcss = require("gulp-postcss");
 const autoprefixer = require('autoprefixer');
 const uglify = require('gulp-uglify');
-const pugpage = "./lib/index.pug";
+const pugpage = "./lib/*.pug";
 
 //Vector de tareas a realizar
 gulp.task('default',['flexbox','material','pug','sass','js','watch'],()=>{
