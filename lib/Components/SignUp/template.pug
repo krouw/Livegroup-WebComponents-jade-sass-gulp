@@ -6,6 +6,10 @@ section.background
           img.circle.responsive-img(src="images/login.jpeg")
         form.row.center-xs
           .col-xs-12.input-field
+            i(class="material-icons prefix") face
+            input#Signup-Name.validate(type="text")
+            label(for="Signup-Name") Nombre
+          .col-xs-12.input-field
             i(class="material-icons prefix") mail
             input#Signin-Email.validate(type="email")
             label(for="Signin-Email") Email
@@ -13,14 +17,9 @@ section.background
             i(class="material-icons prefix") lock
             input#Signin-Password.validate(type="password")
             label(for="Signin-Password") Password
-          .Login-Remember.col-lg-4.input-field
-            input#Login-Rememberme(type="checkbox")
-            label(for='Login-Rememberme') Recuerdame
-          .Login-Forgot.col-lg-8.input-field
-            a.btn-flat(href="#") Olvidó su password?
           .Login-Button.col-lg-12.input-field
-            a.btn.btn-large Ingresar
+            a.btn.btn-large Registrar
         .row.center-lg
           .SignUp.col-lg-12
             .divider
-            a.SignUp-Button.btn-flat(href="signup") Registrate
+            a.SignUp-Button.btn-flat(href="signup") Volver

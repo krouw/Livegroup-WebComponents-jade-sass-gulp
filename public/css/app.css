@@ -2283,7 +2283,8 @@ body {
     width: initial !important;
     left: 4%; }
   .Login-Card .input-field i {
-    margin-top: .4em; }
+    margin-top: .4em;
+    color: #424242; }
   .Login-Card .input-field input[type=email]:focus + label,
   .Login-Card .input-field input[type=password]:focus + label,
   .Login-Card .input-field input[type=text]:focus + label {
@@ -2308,6 +2309,15 @@ body {
   top: 10%;
   right: 0;
   left: 0; }
+
+.SignUp {
+  margin-top: 1em; }
+  .SignUp .SignUp-Button {
+    margin-top: 1rem;
+    text-decoration: underline;
+    color: #9e9e9e;
+    text-transform: capitalize;
+    font-size: 1.3em; }
 
 header {
   height: 9em;

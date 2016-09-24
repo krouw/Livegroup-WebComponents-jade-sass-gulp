@@ -10,126 +10,34 @@
 </head>
 <body>
   <section class="Layout">
-    <header class="row between-lg">
-      <div class="Header col-lg-12">
-        <div class="box">
-          <div class="row between-lg middle-lg">
-            <div class="User col-lg-4">
-              <div class="box">
-                <div class="row">
-                  <div class="User-image col-lg-2"><img class="circle" src="images/65x65.jpeg"></div>
-                  <div class="col-lg"><a class="User-name dropdown-button" data-activates="User-dropdown">Felipe Rubio<i class="material-icons User-Icon">arrow_drop_down</i></a>
-                    <ul class="dropdown-content" id="User-dropdown">
-                      <li><a>Editar Perfil</a></li>
-                      <li><a>Cerrar Sesión</a></li>
-                    </ul>
-                    <p class="User-empresa">Jumbo La Florida</p>
-                  </div>
-                </div>
+    <section class="background">
+      <div class="row center-xs middle-xs">
+        <div class="col-xs-4">
+          <div class="Login-Card card-panel grey lighten-4">
+            <div class="Login-Logo"><img class="circle responsive-img" src="images/login.jpeg"></div>
+            <form class="row center-xs">
+              <div class="col-xs-12 input-field"><i class="material-icons prefix">face</i>
+                <input class="validate" id="Signup-Name" type="text">
+                <label for="Signup-Name">Nombre</label>
+              </div>
+              <div class="col-xs-12 input-field"><i class="material-icons prefix">mail</i>
+                <input class="validate" id="Signin-Email" type="email">
+                <label for="Signin-Email">Email</label>
+              </div>
+              <div class="col-xs-12 input-field"><i class="material-icons prefix">lock</i>
+                <input class="validate" id="Signin-Password" type="password">
+                <label for="Signin-Password">Password</label>
+              </div>
+              <div class="Login-Button col-lg-12 input-field"><a class="btn btn-large">Registrar</a></div>
+            </form>
+            <div class="row center-lg">
+              <div class="SignUp col-lg-12">
+                <div class="divider"></div><a class="SignUp-Button btn-flat" href="signup">Volver</a>
               </div>
             </div>
-            <div class="Logo col-lg-4"><img src="images/250x70.jpeg"></div>
           </div>
         </div>
       </div>
-      <div class="Nav col-lg-12">
-        <div class="box">
-          <div class="Nav-Items row around-lg middle-lg">
-            <div class="col-lg"><a class="Nav-Item" href="index.html">Anuncios</a></div>
-            <div class="col-lg"><a class="Nav-Item">Turnos</a></div>
-            <div class="col-lg"><a class="Nav-Item">Grupo</a></div>
-            <div class="col-lg"><a class="Nav-Item is-active" href="empleados.html">Empleados</a></div>
-            <div class="col-lg"><a class="Nav-Item">Admin</a></div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <section class="Layout-Content row center-lg">
-      <section class="col-lg-8 card">
-        <div class="AnuncioNuevo">
-          <div class="row start-lg">
-            <div class="AnuncioNuevo-Image col-lg-1"><img class="circle" src="/images/75x75.png"></div>
-            <div class="AnuncioNuevo-Form col-lg-10">
-              <form class="box" action="index.html" method="post">
-                <div class="row start-lg">
-                  <div class="col-lg-12">
-                    <textarea class="AnuncioNuevo-Text" placeholder="Escribe un comentario..."></textarea>
-                  </div>
-                  <div class="col-lg-12">
-                    <button class="AnuncioNuevo-Btn btn" type="submit">Enviar</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="col-lg-8 card">
-        <div class="Anuncio">
-          <div class="row start-lg">
-            <div class="Anuncio-Image col-lg-1"><img class="circle" src="/images/75x75.png"></div>
-            <div class="Anuncio-Info col-lg-10">
-              <div class="box">
-                <div class="row start-lg">
-                  <div class="col-lg-12">
-                    <h5 class="Anuncio-User">Felipe Rubio</h5>
-                  </div>
-                  <div class="col-lg-12">
-                    <h6 class="Anuncio-Time">Hace 2 horas</h6>
-                  </div>
-                  <div class="col-lg-12">
-                    <p class="Anuncio-Text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="col-lg-8 card">
-        <div class="Anuncio">
-          <div class="row start-lg">
-            <div class="Anuncio-Image col-lg-1"><img class="circle" src="/images/75x75.png"></div>
-            <div class="Anuncio-Info col-lg-10">
-              <div class="box">
-                <div class="row start-lg">
-                  <div class="col-lg-12">
-                    <h5 class="Anuncio-User">Felipe Rubio</h5>
-                  </div>
-                  <div class="col-lg-12">
-                    <h6 class="Anuncio-Time">Hace 2 horas</h6>
-                  </div>
-                  <div class="col-lg-12">
-                    <p class="Anuncio-Text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="col-lg-8 card">
-        <div class="Anuncio">
-          <div class="row start-lg">
-            <div class="Anuncio-Image col-lg-1"><img class="circle" src="/images/75x75.png"></div>
-            <div class="Anuncio-Info col-lg-10">
-              <div class="box">
-                <div class="row start-lg">
-                  <div class="col-lg-12">
-                    <h5 class="Anuncio-User">Felipe Rubio</h5>
-                  </div>
-                  <div class="col-lg-12">
-                    <h6 class="Anuncio-Time">Hace 2 horas</h6>
-                  </div>
-                  <div class="col-lg-12">
-                    <p class="Anuncio-Text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </section>
   </section>
   <script src="js/jquery.min.js"></script>
