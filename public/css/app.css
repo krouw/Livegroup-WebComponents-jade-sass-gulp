@@ -5,7 +5,7 @@ body {
   margin: 0; }
 
 .Layout-Content {
-  margin-top: 1.5em; }
+  margin-top: 3.5em; }
   .Layout-Content .card {
     background-color: #fafafa;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.24), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
@@ -2358,8 +2358,7 @@ header {
   width: 100%; }
 
 .Nav .Nav-Items {
-  width: 60%;
-  margin-left: 1em; }
+  width: 100%; }
   .Nav .Nav-Items div {
     text-align: center; }
 
@@ -2376,6 +2375,16 @@ header {
 .Nav .Nav-Item.is-active {
   border-bottom: 3px solid #558B2F;
   padding-bottom: .7em; }
+
+.Nav .Nav-Button {
+  position: absolute;
+  background-color: #8bc34a;
+  width: 70px;
+  height: 70px;
+  line-height: 71px; }
+  .Nav .Nav-Button i {
+    font-size: 2.5em;
+    line-height: 67px; }
 
 .AnuncioNuevo {
   padding: 1em; }
