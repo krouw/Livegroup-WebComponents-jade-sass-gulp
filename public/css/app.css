@@ -2278,7 +2278,7 @@ body {
 .Login-Card {
   margin-top: 10em; }
   .Login-Card form {
-    margin-top: 2.5em; }
+    margin-top: 4em; }
   .Login-Card .input-field label {
     width: initial !important;
     left: 4%; }
@@ -2300,7 +2300,7 @@ body {
     color: #558B2F; }
   .Login-Card .Login-Button {
     margin-top: 2em; }
-    .Login-Card .Login-Button a {
+    .Login-Card .Login-Button input {
       padding: 0 5em;
       background-color: #558B2F; }
 
@@ -2314,8 +2314,7 @@ body {
   margin-top: 1em; }
   .SignUp .SignUp-Button {
     margin-top: 1rem;
-    text-decoration: underline;
-    color: #9e9e9e;
+    color: #424242;
     text-transform: capitalize;
     font-size: 1.3em; }
 
