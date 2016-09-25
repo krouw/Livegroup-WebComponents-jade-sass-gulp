@@ -2,4 +2,15 @@ include ../Header/template.pug
 section.Layout-Content.row.center-lg
   section.col-lg-10.col-xlg-8.card
     .Empleados
-      .row hello
+      .row.start-lg
+        .Empleados-Filter.col-lg-12
+          form.Filter
+            .row.start-lg
+              .col-lg-2
+                a.Filter-Group.btn.btn-large(type="button", name="button") Todos
+                  i.material-icons.right arrow_drop_down
+              .Filter-Search.input-field.col-lg-10
+                .box
+                  i.material-icons.prefix search
+                  input#Empleados-input(type="text", name="search")
+                  label(for="Empleados-input") Buscar

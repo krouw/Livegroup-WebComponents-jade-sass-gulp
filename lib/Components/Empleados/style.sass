@@ -1,0 +1,36 @@
+.Empleados-Filter
+  padding: 1em
+  .Filter-Group
+    width: 11em
+    height: 3rem
+    line-height: 3rem
+    padding-left: 3rem
+    padding-right: 2rem
+    background-color: $verdeclaro
+    i
+      margin-left: 0
+  .Filter-Search
+    margin-top: .7rem
+    .box
+      margin-left: 1em
+    i
+      color: $grisclaro
+      font-size: 2.5em
+      line-height: .6
+    input[type="text"]
+      width: 50%
+      height: 2em
+    label
+      width: initial !important
+      left: 2.5%
+      font-size: 1em
+      top: 0.5rem
+  .input-field input[type=text]:focus + label
+    color: $verdeclaro
+  .input-field input[type=text]:focus
+    border-bottom: 1px solid $verdeclaro
+    box-shadow: 0 1px 0 0 $verdeclaro
+  .input-field .prefix.active
+    color: $verdeclaro
+  .box .label.active
+    transform: translateY(-100%)

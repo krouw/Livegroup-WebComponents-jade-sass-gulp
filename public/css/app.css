@@ -2462,3 +2462,42 @@ header {
     letter-spacing: 0;
     line-height: 30px;
     margin: 0.6rem 0; }
+
+.Empleados-Filter {
+  padding: 1em; }
+  .Empleados-Filter .Filter-Group {
+    width: 11em;
+    height: 3rem;
+    line-height: 3rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    background-color: #8bc34a; }
+    .Empleados-Filter .Filter-Group i {
+      margin-left: 0; }
+  .Empleados-Filter .Filter-Search {
+    margin-top: .7rem; }
+    .Empleados-Filter .Filter-Search .box {
+      margin-left: 1em; }
+    .Empleados-Filter .Filter-Search i {
+      color: #9e9e9e;
+      font-size: 2.5em;
+      line-height: .6; }
+    .Empleados-Filter .Filter-Search input[type="text"] {
+      width: 50%;
+      height: 2em; }
+    .Empleados-Filter .Filter-Search label {
+      width: initial !important;
+      left: 2.5%;
+      font-size: 1em;
+      top: 0.5rem; }
+  .Empleados-Filter .input-field input[type=text]:focus + label {
+    color: #8bc34a; }
+  .Empleados-Filter .input-field input[type=text]:focus {
+    border-bottom: 1px solid #8bc34a;
+    box-shadow: 0 1px 0 0 #8bc34a; }
+  .Empleados-Filter .input-field .prefix.active {
+    color: #8bc34a; }
+  .Empleados-Filter .box .label.active {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%); }
