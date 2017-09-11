@@ -3,6 +3,7 @@ Desarrollo Front End Proyecto Livegroup
 Ingeniería en Software - 2016
 
 Front End Basado en Web Components  
+** API DEPRECADA PROYECTO LIVEGROUP
 
 ###### Liberías  
 + Materialize
