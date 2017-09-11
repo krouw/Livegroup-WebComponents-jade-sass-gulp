@@ -2,16 +2,19 @@
 Desarrollo Front End Proyecto Livegroup
 Ingeniería en Software - 2016
 
-Web Components
-  pug
-  sass
-  gulp
+Front End Basado en Web Components  
 
-Liberías
-  materialize
-  jquery
-  flexboxgrid
+###### Liberías  
++ Materialize
++ JQuery
++ FlexboxGrid
++ Pug
++ Sass
++ Gulp
 
-En el directorio de la carpeta ejecutar
-1) npm install
-2) gulp
+###### Instalación  
+
+1. Instalar NodeJS >= 4.0  
+2. Intalar Módulos, _npm install_ o _yarn_
+3. Instalar Gulp Globalmente, _(sudo) npm install -g gulp_
+4. Correr GulpFile, _gulp_
